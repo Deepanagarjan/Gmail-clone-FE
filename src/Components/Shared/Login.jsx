@@ -1,6 +1,6 @@
-import React from 'react'
+// import React from 'react'
 import { signInWithPopup } from 'firebase/auth';
-import { auth, provider } from '../firebase';
+import { auth, provider } from '../Shared/firebase.jsx';
 import GoogleButton from 'react-google-button';
 import { useDispatch } from 'react-redux';
 import { setAuthUser } from '../redux/appSlice';

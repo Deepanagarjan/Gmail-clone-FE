@@ -1,4 +1,4 @@
-import React from 'react'
+// import React from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import { IoMdMore, IoMdArrowBack } from "react-icons/io";
 import {
@@ -14,7 +14,7 @@ import {
 import { BiArchiveIn } from "react-icons/bi";
 import { useSelector } from 'react-redux';
 import { deleteDoc, doc } from 'firebase/firestore';
-import { db } from '../firebase';
+import { db } from '../Shared/firebase';
 import { motion } from "framer-motion"
 
 const Mail = () => {

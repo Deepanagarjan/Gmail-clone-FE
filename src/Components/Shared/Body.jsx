@@ -1,15 +1,16 @@
-import React from 'react'
-import Sidebar from './Sidebar'
-import { Outlet } from 'react-router-dom'
-import Navbar from './Navbar'
+// import React from 'react'
+import Sidebar from "./Sidebar";
+import { Outlet } from "react-router-dom";
+// import Navbar from "./Navbar";
 
 const Body = () => {
   return (
-    <div className='flex'>
+    <div className="flex">
+      {/* <Navbar /> */}
       <Sidebar />
       <Outlet />
     </div>
-  )
-}
+  );
+};
 
 export default Body;

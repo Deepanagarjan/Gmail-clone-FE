@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from 'react'
-import Message from './Message'
-import { collection, getDocs, onSnapshot, orderBy, query } from 'firebase/firestore';
-import { db } from '../firebase';
+import  { useEffect, useState } from 'react'
+import Message from './Message.jsx'
+import { collection, onSnapshot, orderBy, query } from 'firebase/firestore';
+import { db } from './firebase.jsx';
 import { useDispatch, useSelector } from 'react-redux';
-import { setEmails } from '../redux/appSlice';
+import { setEmails } from '../redux/appSlice.js';
 
 const Messages = () => {
   const { searchText, emails } = useSelector(store => store.app);
@@ -37,4 +37,4 @@ const Messages = () => {
   )
 }
 
-export default Messages
+export default Messages;

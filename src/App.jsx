@@ -1,14 +1,14 @@
-import Navbar from './components/Navbar';
-import Inbox from './components/Inbox';
-import SendEmail from './components/SendEmail';
+import Navbar from './Components/Shared/Navbar';
+import Inbox from './Components/Shared/Inbox';
+import SendEmail from './Components/Shared/SendEmail';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import Mail from './components/Mail';
-import Body from './components/Body';
+import Mail from './Components/Shared/Mail';
+import Body from './Components/Shared/Body';
 import { useDispatch, useSelector } from 'react-redux';
-import Login from './components/Login';
+import Login from './Components/Shared/Login';
 import { useEffect } from 'react';
-import { auth } from './firebase';
-import { setAuthUser } from './redux/appSlice';
+import { auth } from './Components/Shared/firebase';
+import { setAuthUser } from './Components/redux/appSlice';
 
 const router = createBrowserRouter([
   {
